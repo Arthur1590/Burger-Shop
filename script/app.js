@@ -2,7 +2,7 @@ const product = {
   crazy: {
     name: "Crazy",
     price: 31000,
-    img: "./images/products/burger-1.png",
+    img: "../images/products/burger-1.png",
     amount: 0,
     get totalSum() {
       return this.price * this.amount;
@@ -11,7 +11,7 @@ const product = {
   light: {
     name: "Light",
     price: 26000,
-    img: "/images/products/burger-2.png",
+    img: "../images/products/burger-2.png",
     amount: 0,
     get totalSum() {
       return this.price * this.amount;
@@ -20,7 +20,7 @@ const product = {
   cheeseburger: {
     name: "CheeseBurger",
     price: 29000,
-    img: "/images/products/burger-3.png",
+    img: "../images/products/burger-3.png",
     amount: 0,
     get totalSum() {
       return this.price * this.amount;
@@ -29,7 +29,7 @@ const product = {
   dburger: {
     name: "dBurger",
     price: 24000,
-    img: "/images/products/burger-4.png",
+    img: "../images/products/burger-4.png",
     amount: 0,
     get totalSum() {
       return this.price * this.amount;
@@ -125,7 +125,7 @@ function cardItemBurger(productData) {
   return `
   <div class="wrapper__navbar-product">
     <div class="wrapper__navbar-info">
-          <img class="wrapper__navbar-productImage" src=".${
+          <img class="wrapper__navbar-productImage" src="..${
             productData.img
           }" alt="">
         <div>
