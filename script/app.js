@@ -50,6 +50,8 @@ productBtn.forEach((btn) => {
   });
 });
 
+// commit 2
+
 function plusOrMinus(btn) {
   let parent = btn.closest(".wrapper__list-card"),
     parentId = parent.getAttribute("id");
@@ -60,10 +62,11 @@ function plusOrMinus(btn) {
 
 function basket() {
   const productArray = [];
+
   for (const key in product) {
     let totalCount = 0;
     const po = product[key];
-    const productCard = document.querySelector(`#${po.name.toLowerCase()}`);
+    const productCard = document.querySelector(`#${po.name.toLowerCase()}`),
     parentIndicator = productCard.querySelector(".wrapper__list-count");
 
     if (po.amount) {
@@ -78,10 +81,13 @@ function basket() {
     }
     basketBtnCount.innerHTML = totalCount;
   }
+
   basketChecklist.innerHTML = "";
+
   for (let i = 0; i < productArray.length; i++) {
     basketChecklist.innerHTML += cardItemBurger(productArray[i]);
   }
+
   totalPriceBasket.innerHTML = totalSumProduct();
   const allProduct = totalCountProduct();
 
