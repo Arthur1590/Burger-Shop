@@ -2,7 +2,7 @@ const product = {
   crazy: {
     name: "Crazy",
     price: 31000,
-    img: "/images/products/burger-1.png",
+    img: "./images/products/burger-1.png",
     amount: 0,
     get totalSum() {
       return this.price * this.amount;
