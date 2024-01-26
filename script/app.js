@@ -95,6 +95,8 @@ function basket() {
     basketBtnCount.classList.remove("active");
   }
   basketBtnCount.innerHTML = allProduct;
+
+  basket()
 }
 
 function totalSumProduct() {
@@ -125,7 +127,7 @@ function cardItemBurger(productData) {
   return `
   <div class="wrapper__navbar-product">
     <div class="wrapper__navbar-info">
-          <img class="wrapper__navbar-productImage" src="..${
+          <img class="wrapper__navbar-productImage" src="./${
             productData.img
           }" alt="">
         <div>
